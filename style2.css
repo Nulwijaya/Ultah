@@ -1,0 +1,81 @@
+body{
+   margin:0;
+   padding:0;
+   background-color:#bbb;
+}
+   p{
+      text-align:center;
+      margin:10px;
+      font-family:'oswald';
+      position: absolute ;
+   }
+   .video{
+      position:relative;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      box-shadow:2px 5px 7px;
+   }
+   #background-video{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+   }
+      .animated{
+      animation:muncul 1s ease-in-out forwards;
+   }
+   @keyframes muncul{
+      0%{
+         opacity:0;
+         transform:scale(0.8);
+      }
+      100%{
+         opacity:1;
+         transform:scale(1);
+      }
+   }
+   /* Default styling (untuk layar besar atau desktop) */
+body {
+    font-size: 18px;
+    background-color: white;
+}
+
+/* Untuk layar kecil (ponsel potret) */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+        background-color: #f0f0f0;
+    }
+}
+
+/* Untuk layar tablet potret */
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        background-color: #eaeaea;
+    }
+}
+
+/* Untuk layar tablet landscape hingga laptop kecil */
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        font-size: 17px;
+        background-color: #dcdcdc;
+    }
+}
+
+/* Untuk layar besar (laptop besar hingga monitor) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    body {
+        font-size: 18px;
+        background-color: #ccc;
+    }
+}
+
+/* Untuk layar sangat besar (monitor ultra-wide) */
+@media (min-width: 1201px) {
+    body {
+        font-size: 20px;
+        background-color: #bbb;
+    }
+}
